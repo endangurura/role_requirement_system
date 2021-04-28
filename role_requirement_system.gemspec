@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Emmanuel Ndangurura"]
   spec.email         = ["endangurura@tachyinc.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Simple role based security for restful_authentication}
+  spec.description   = %q{Simple role based security for restful_authentication}
+  spec.homepage      = "https://github.com/endangurura/role_requirement_system"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
