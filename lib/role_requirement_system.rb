@@ -44,9 +44,9 @@ module RoleRequirementSystem
       logger.debug "===debug==="
       
       # only declare that before filter once
-      unless (@before_filter_declared||=false)
-        @before_filter_declared=true
-        before_filter :check_roles
+      unless (@before_action_declared||=false)
+        @before_action_declared=true
+        before_action :check_roles
       end
       
       # convert to an array if it isn't already
@@ -96,6 +96,7 @@ module RoleRequirementSystem
         
         # check to see if they have one of the required roles
         passed = false 
+        logger.debug "====roles==="
         roles.each { |role|
           logger.debug "=====has_role====="
           logger.debug user.inspect
